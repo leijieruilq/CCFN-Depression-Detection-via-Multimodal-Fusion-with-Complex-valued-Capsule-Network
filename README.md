@@ -18,6 +18,7 @@
 
 ### Please cite this if you like this code:
 
+'''
 @INPROCEEDINGS{10650262,
   author={Lei, Jierui and Yang, Qingyi and Li, Bo and Zhang, Wenjian},
   booktitle={2024 International Joint Conference on Neural Networks (IJCNN)}, 
@@ -28,4 +29,4 @@
   pages={1-6},
   keywords={Adaptation models;Mental disorders;Semantics;Neural networks;Mental health;Medical services;Depression;Depression detection;Multimodal fusion;Complex capsules},
   doi={10.1109/IJCNN60899.2024.10650262}}
-
+'''
