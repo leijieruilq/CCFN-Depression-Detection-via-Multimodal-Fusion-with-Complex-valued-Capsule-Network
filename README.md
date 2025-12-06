@@ -1,5 +1,9 @@
 # CCFN:Depression-Detection-via-Multimodal-Fusion-with-Complex-valued-Capsule-Network
 
+## Introduction
+
+Depression is a quite common mental disorder that poses serious threats to people’s physical and mental health in the modern society. Current diagnosis strategies largely rely on doctors’ experiences and patients’ cooperation, which results in a high rate of misdiagnosis in practice. It has been noticed that people with depression exhibit typical characteristics in their expressions, speech, and other aspects, which hold significant value for diagnosing. Therefore, we propose in this paper an automatic model CCFN to aid depression detection based on multimodal characteristics of human beings. With the capsule network framework, the model uses multiple capsules to extract from single modalities fine-grained features that are then aggregated into higher-level and cross-modal capsules through a dynamic routing mechanism driven by complex numbers. Such a design allows the model to adaptively acquire semantics that can discriminate depression in the cross-modal semantic space. The experiments on a standard dataset show (1) that our model outperforms existing mainstream approaches and (2) that complex-valued capsules play a key role in the success of our model.
+
 此代码为联合训练的多模态分类模型（语音+文本）
 
 ## 运行方式
