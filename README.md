@@ -4,21 +4,21 @@
 
 Depression is a quite common mental disorder that poses serious threats to people’s physical and mental health in the modern society. Current diagnosis strategies largely rely on doctors’ experiences and patients’ cooperation, which results in a high rate of misdiagnosis in practice. It has been noticed that people with depression exhibit typical characteristics in their expressions, speech, and other aspects, which hold significant value for diagnosing. Therefore, we propose in this paper an automatic model CCFN to aid depression detection based on multimodal characteristics of human beings. With the capsule network framework, the model uses multiple capsules to extract from single modalities fine-grained features that are then aggregated into higher-level and cross-modal capsules through a dynamic routing mechanism driven by complex numbers. Such a design allows the model to adaptively acquire semantics that can discriminate depression in the cross-modal semantic space. The experiments on a standard dataset show (1) that our model outperforms existing mainstream approaches and (2) that complex-valued capsules play a key role in the success of our model.
 
-此代码为联合训练的多模态分类模型（语音+文本）
+This code implements a jointly trained multimodal classification model (audio + text).
 
-## 运行方式
+## Execution Procedure
 
-### 1.运行特征提取代码：
+### 1. Run feature extraction scripts:
 
-    (1) cd ./CCFN/features_extract/ , 之后分别运行audio_feature_whole.py与text_feature_whole.py
+    (1) cd ./CCFN/features_extract/ , then execute audio_feature_whole.py and text_feature_whole.py sequentially
 
-### 2.运行multi_model代码: 
+### 2. Run the multi_model code:
 
-    (1) cd ./CCFN/multi_models/ (对应的以下模型:(CCFN,CrossCLR,Capsule,EFCNN,EFLSTM,FAL,LMF,MMLTF,TFN))
+    (1) cd ./CCFN/multi_models/ (corresponding to the following models: (CCFN, CrossCLR, Capsule, EFCNN, EFLSTM, FAL, LMF, MMLTF, TFN))
 
-    (2) 直接测试：在对应模型(CCFN,CrossCLR,Capsule,EFCNN,EFLSTM,FAL,LMF,MMLTF,TFN)的目录下运行main.py，对应的模型保存在models里面
+    (2) Direct testing: Run main.py in the directory of the corresponding model (CCFN, CrossCLR, Capsule, EFCNN, EFLSTM, FAL, LMF, MMLTF, TFN). The models are stored in the models directory.
 
-    (3) 三折交叉验证：运行对应模型(CCFN,CrossCLR,Capsule,EFCNN,EFLSTM,FAL,LMF,MMLTF,TFN)的目录下的main_3.py文件,在其中修改fold 1-3进行单独训练
+    (3) Three-fold cross-validation: Run the main_3.py file in the directory of the corresponding model (CCFN, CrossCLR, Capsule, EFCNN, EFLSTM, FAL, LMF, MMLTF, TFN). Modify fold 1-3 within the file to train each fold separately.
 
 ### Please cite this if you like this code:
 
